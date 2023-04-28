@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ProjetFinal</string>
+    <string name="username">UserName</string>
+    <string name="username1">Enter your UserName</string>
+    <string name="password">Password</string>
+    <string name="password1">Enter your Password</string>
+    <string name="btn">Sign In</string>
+    <string name="btn1">Search</string>
+    <string name="date">Date of resevation</string>
+    <string name="number">number of reservations</string>
+    <string name="number1">Enter the number of person</string>
+    <string-array name="spinner_options">
+        <item>Hammamet</item>
+        <item>Sousse</item>
+        <item>Sfax</item>
+        <item>Djerba</item>
+        <item>Kerkennah</item>
+    </string-array>
+    <string name="title_activity_djerba">Djerba</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="toastText">value</string>
+    <string name="btnRegister">Create Account</string>
+
+</resources>

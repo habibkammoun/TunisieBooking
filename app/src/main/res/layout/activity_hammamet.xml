@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".Hammamet">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="305dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/images" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hasdrubal Prestige Thalassa and Spa Djerba"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="43dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/localisation" />
+
+                        <TextView
+                            android:layout_width="173dp"
+                            android:layout_height="wrap_content"
+                            android:text=" Hôtel à Triffa" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Situé sur la plage de Sidi Mahrez à Djerba, l'Hasdrubal Prestige Thalassa and Spa Djerba vous propose un hébergement de luxe 5 étoiles, un spa et une connexion Wi-Fi gratuite. Staff very friendly, location is great nice beach front" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tarif par nuit=" />
+                        <TextView
+                            android:id="@+id/hotel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="504"/>
+                    </LinearLayout>
+                    <Button
+
+                        android:id="@+id/btnSignIn1"
+                        android:layout_width="135dp"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/black"
+                        android:text="validate"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="309dp"
+                android:src="@drawable/iberodjerba" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iberostar Mehari Djerba"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/localisation" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        android:text=" Hôtel à Taguermess" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" L’hôtel tout compris Iberostar Mehari Djerba vous accueille sur l'île de Djerba, à côté de la plage de Sidi Akkour et en face du club de golf de Djerba. Great staff hamam food was good pool was nice" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tarif par nuit=" />
+                    <TextView
+                        android:id="@+id/hotel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="258"/>
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/btnSignIn2"
+                    android:layout_width="135dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"
+                    android:text="validate"
+                    android:textSize="15sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:src="@drawable/houmtsouk" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iliade Aqua Park Djerba"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/localisation" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        android:text=" Hôtel à Houmt Souk" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Situé à Houmt Souk, à 500 mètres de la plage de Vincci Helios, l'Iliade Aqua Park Djerba propose un restaurant, un parking privé gratuit, une piscine extérieure ouverte en saison et un bar." />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tarif par nuit=" />
+                    <TextView
+                        android:id="@+id/hotel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="311"/>
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/btnSignIn3"
+                    android:layout_width="135dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"
+                    android:text="validate"
+                    android:textSize="15sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:src="@drawable/download1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ulysse Djerba Thalasso and SPA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="43dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/localisation" />
+
+                    <TextView
+                        android:layout_width="173dp"
+                        android:layout_height="wrap_content"
+                        android:text="  Hôtel à Houmt Souk" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Situé à Houmt Souk, à quelques pas de la plage de Mezraia, l'Ulysse Djerba Thalasso and SPA propose une piscine extérieure, un parking privé gratuit, une salle de sport et un jardin. Super hôtel Le personnel est au petit soin"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tarif par nuit=" />
+                    <TextView
+                        android:id="@+id/hotel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="635"/>
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/btnSignIn4"
+                    android:layout_width="135dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/black"
+                    android:text="validate"
+                    android:textSize="15sp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
