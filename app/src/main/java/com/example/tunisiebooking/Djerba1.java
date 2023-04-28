@@ -26,7 +26,7 @@ public class Djerba1 extends AppCompatActivity{
         setContentView(R.layout.activity_hammamet);
         init();
         prix_total();
-
+//jzsnfk
     }
     private void init()
     {
