@@ -96,7 +96,7 @@
             android:textColor="@color/black"
             android:textSize="25sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/affichage_prix"
             android:layout_width="wrap_content"
             android:layout_height="64dp"
