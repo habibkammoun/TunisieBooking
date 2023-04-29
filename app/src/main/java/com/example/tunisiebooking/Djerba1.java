@@ -2,118 +2,68 @@ package com.example.tunisiebooking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.example.tunisiebooking.R;
-public class Djerba1 extends AppCompatActivity{
-    TextView textview1;
-    TextView textview2;
-    TextView textview3;
-    TextView textview4;
-    Button button1;
-    Button button2;
-    Button button3;
-    Button button4;
-    EditText number;
-    TextView prix;
+public class Djerba1 extends AppCompatActivity implements View.OnClickListener {
+    List<TextView> hotelprix = new ArrayList<>();
+    List<Button> hotelButton = new ArrayList<>();
+    public void init()
+    {
+        hotelprix.add(findViewById(R.id.hotel1));
+        hotelprix.add(findViewById(R.id.hotel2));
+        hotelprix.add(findViewById(R.id.hotel3));
+        hotelprix.add(findViewById(R.id.hotel4));
+        hotelButton.add(findViewById(R.id.btnSignIn1));
+        hotelButton.add(findViewById(R.id.btnSignIn2));
+        hotelButton.add(findViewById(R.id.btnSignIn3));
+        hotelButton.add(findViewById(R.id.btnSignIn4));
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hammamet);
+        setContentView(R.layout.activity_djerba1);
+        getSupportActionBar().hide();
         init();
-        prix_total();
-//jzsnfk
+        ecouteClick();
     }
-    private void init()
-    {
-        textview1=(TextView) findViewById(R.id.hotel1);
-        textview2=(TextView) findViewById(R.id.hotel2);
-        textview3=(TextView) findViewById(R.id.hotel3);
-        textview4=(TextView) findViewById(R.id.hotel4);
-        button1=(Button)  findViewById(R.id.btnSignIn1);
-        button2=(Button)  findViewById(R.id.btnSignIn2);
-
-        button3=(Button)  findViewById(R.id.btnSignIn3);
-
-        button4=(Button)  findViewById(R.id.btnSignIn4);
-        number=(EditText) findViewById(R.id.number1);
-        prix=(TextView) findViewById(R.id.total);
+    private void navigateToActivity(int prixHotel){
+        Intent intent = new Intent(Djerba1.this,Price.class);
+        intent.putExtra("prix",prixHotel);
+        startActivity(intent);
+        //finish();
+    }
+    private void ecouteClick(){
+        for (Button button : hotelButton)
+            button.setOnClickListener((View.OnClickListener)this);
     }
 
-    private void prix_total() {
-        final double[] total_prix = new double[1];
-        //listener pour le bouton 1
-        button1.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Double dinar = null;
-                int entier = 0;
-                try {
-                    dinar = Double.parseDouble(textview1.getText().toString());
-                    String text = number.getText().toString(); // récupérer le texte entré par l'utilisateur
-                    entier = Integer.parseInt(text);
-                } catch (Exception e) {
-                } // Pour ne pas se planter
-                if(dinar==0 || entier==0)
-                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.toastText), Toast.LENGTH_SHORT).show();
-                else
-                    total_prix[0] = (double) dinar * entier;
-            }});
-        //listener pour le bouton2
-        button2.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Double dinar = null;
-                int entier = 0;
-                try {
-                    dinar = Double.parseDouble(textview2.getText().toString());
-                    String text = number.getText().toString(); // récupérer le texte entré par l'utilisateur
-                    entier = Integer.parseInt(text);
-                } catch (Exception e) {
-                } // Pour ne pas se planter
-                if(dinar==0 || entier==0)
-                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.toastText), Toast.LENGTH_SHORT).show();
-                else
-                    total_prix[0] = (double) dinar * entier;
-            }});
-        //listener pour le bouton3
-        button3.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Double dinar = null;
-                int entier = 0;
-                try {
-                    dinar = Double.parseDouble(textview3.getText().toString());
-                    String text = number.getText().toString(); // récupérer le texte entré par l'utilisateur
-                    entier = Integer.parseInt(text);
-                } catch (Exception e) {
-                } // Pour ne pas se planter
-                if(dinar==0 || entier==0)
-                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.toastText), Toast.LENGTH_SHORT).show();
-                else
-                    total_prix[0] = (double) dinar * entier;
-            }});
-        //listener pour le bouton 4
-        button4.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
-                Double dinar = null;
-                int entier = 0;
-                try {
-                    dinar = Double.parseDouble(textview4.getText().toString());
-                    String text = number.getText().toString(); // récupérer le texte entré par l'utilisateur
-                    entier = Integer.parseInt(text);
-                } catch (Exception e) {
-                } // Pour ne pas se planter
-                if(dinar==0 || entier==0)
-                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.toastText), Toast.LENGTH_SHORT).show();
-                else
-                    total_prix[0] = (double) dinar * entier;
-            }});
-
-        prix.setText(Double.toString(total_prix[0]));
-
+    // Gestion des clics sur les ImageView
+    @Override
+    public void onClick(View v){
+        switch(v.getId()){
+            case R.id.btnSignIn1 :
+                navigateToActivity(Integer.parseInt(hotelprix.get(0).getText().toString()));
+                break;
+            case R.id.btnSignIn2 :
+                navigateToActivity(Integer.parseInt(hotelprix.get(1).getText().toString()));
+                break;
+            case R.id.btnSignIn3 :
+                navigateToActivity(Integer.parseInt(hotelprix.get(2).getText().toString()));
+                break;
+            case R.id.btnSignIn4 :
+                navigateToActivity(Integer.parseInt(hotelprix.get(3).getText().toString()));
+                break;
+        }
     }
-
 }
 

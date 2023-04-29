@@ -1,64 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/picture1"
     tools:context=".Price">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-    </LinearLayout>
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <TableRow
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="user name"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/username1"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/textViewNumberPerson"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:layout_marginTop="120dp"
-                android:text="Total Price"
+                android:text="number"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:textSize="35sp" />
-        </TableRow>
-        <TableRow
-            android:layout_marginTop="20dp">
-            <EditText
-                android:id="@+id/total"
-                android:inputType="text|number"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:hint="@string/username1"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-        </TableRow>
+                android:textSize="25sp" />
 
+            <NumberPicker
+                android:id="@+id/numberPicker1"
+                android:layout_width="44dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="50dp"
+                />
 
-        <TableRow android:layout_marginTop="20dp">
-            <Button
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La date de la reservation"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
 
-                android:id="@+id/btnSignIn"
-                android:layout_width="235dp"
-                android:layout_height="64dp"
-                android:background="@color/black"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Pay with card"
-                android:textSize="20sp"
-                android:layout_marginLeft="55dp"/>
-        </TableRow>
-    </TableLayout>
-</LinearLayout>
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Les enfants ont accès gratuit."
+            android:textColor="@color/purple_200"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="235dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Pay with card"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total Price"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/affichage_prix"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:hint="le prix total" />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -23,6 +23,11 @@
 
         </activity>
         <activity
+            android:name=".Sousse"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".Djerba1"
             android:exported="false">
 
@@ -34,6 +39,16 @@
         </activity>
         <activity
             android:name=".Kerkennah"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Price"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Sfax"
             android:exported="false">
 
         </activity>
