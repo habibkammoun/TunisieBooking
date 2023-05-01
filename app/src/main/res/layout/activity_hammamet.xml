@@ -27,7 +27,7 @@
                 <ImageView
                     android:layout_width="128dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/images" />
+                    android:src="@drawable/hotel_ham1" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hasdrubal Prestige Thalassa and Spa Djerba"
+                        android:text="Hotel Bel Azur Thalasso and Bungalows"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -54,13 +54,13 @@
                         <TextView
                             android:layout_width="173dp"
                             android:layout_height="wrap_content"
-                            android:text=" Hôtel à Triffa" />
+                            android:text=" Hôtel à Hammamet" />
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" Situé sur la plage de Sidi Mahrez à Djerba, l'Hasdrubal Prestige Thalassa and Spa Djerba vous propose un hébergement de luxe 5 étoiles, un spa et une connexion Wi-Fi gratuite. Staff very friendly, location is great nice beach front" />
+                        android:text=" Situé directement sur la plage de Hammamet, dans un magnifique jardin de 12 hectares, à proximité du centre-ville et de la Médina, l'Hotel Bel Azur Thalasso and Bungalows allie cadre agréable, confort,..." />
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:orientation="horizontal">
@@ -73,7 +73,7 @@
                             android:id="@+id/hotel1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="504"/>
+                            android:text="187"/>
                     </LinearLayout>
                     <Button
 
@@ -97,7 +97,7 @@
             <ImageView
                 android:layout_width="124dp"
                 android:layout_height="309dp"
-                android:src="@drawable/iberodjerba" />
+                android:src="@drawable/hotel_ham2" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iberostar Mehari Djerba"
+                    android:text="Hotel La Residence Hammamet "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -124,13 +124,13 @@
                     <TextView
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        android:text=" Hôtel à Taguermess" />
+                        android:text=" Hôtel à Hammamet" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" L’hôtel tout compris Iberostar Mehari Djerba vous accueille sur l'île de Djerba, à côté de la plage de Sidi Akkour et en face du club de golf de Djerba. Great staff hamam food was good pool was nice" />
+                    android:text=" itué à Hammamet, l’Hotel La Residence Hammamet se trouve à 100 mètres d’une plage de sable privée." />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                         android:id="@+id/hotel2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="258"/>
+                        android:text="73"/>
                 </LinearLayout>
 
                 <Button
@@ -170,7 +170,7 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="175dp"
-                android:src="@drawable/houmtsouk" />
+                android:src="@drawable/hotel_ham3" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -180,7 +180,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iliade Aqua Park Djerba"
+                    android:text="Le Sultan"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -197,13 +197,13 @@
                     <TextView
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        android:text=" Hôtel à Houmt Souk" />
+                        android:text=" Hôtel à Hammamet" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" Situé à Houmt Souk, à 500 mètres de la plage de Vincci Helios, l'Iliade Aqua Park Djerba propose un restaurant, un parking privé gratuit, une piscine extérieure ouverte en saison et un bar." />
+                    android:text=" Doté d'un accès direct à la plage d'Hammamet, l'hôtel 4 étoiles Le Sultan dispose de 2 piscines. Le centre-ville d'Hammamet est à 3 km.." />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -244,7 +244,7 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="175dp"
-                android:src="@drawable/download1" />
+                android:src="@drawable/hotel_ham4" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -255,7 +255,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ulysse Djerba Thalasso and SPA"
+                    android:text="TMK Hotel Flora Park "
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -272,13 +272,13 @@
                     <TextView
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        android:text="  Hôtel à Houmt Souk" />
+                        android:text="  Hôtel à Hammamet" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" Situé à Houmt Souk, à quelques pas de la plage de Mezraia, l'Ulysse Djerba Thalasso and SPA propose une piscine extérieure, un parking privé gratuit, une salle de sport et un jardin. Super hôtel Le personnel est au petit soin"/>
+                    android:text=" Cet hôtel 4 étoiles est situé à seulement 2 km du port de Yasmine. Cet établissement de style arabo-mauresque possède des piscines, des restaurants et une plage privée située à 400 mètres."/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:orientation="horizontal">
@@ -291,7 +291,7 @@
                         android:id="@+id/hotel4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="635"/>
+                        android:text="365"/>
                 </LinearLayout>
 
                 <Button
